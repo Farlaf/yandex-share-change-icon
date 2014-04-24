@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'yandex-share';
+  src: url('../font/yandex-share.eot?22706953');
+  src: url('../font/yandex-share.eot?22706953#iefix') format('embedded-opentype'),
+       url('../font/yandex-share.woff?22706953') format('woff'),
+       url('../font/yandex-share.ttf?22706953') format('truetype'),
+       url('../font/yandex-share.svg?22706953#yandex-share') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'yandex-share';
+    src: url('../font/yandex-share.svg?22706953#yandex-share') format('svg');
+  }
+}
+*/
+ 
+.yandex-share-icon .b-share-icon:before {
+    font-family: "yandex-share";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+        
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+}
+ 
+.yandex-share-icon .b-share-icon_facebook:before { content: '\e800'; } /* '' */
+.yandex-share-icon .b-share-icon_yaru:before { content: '\e80c'; } /* '' */
+.yandex-share-icon .b-share-icon_gplus:before { content: '\e802'; } /* '' */
+.yandex-share-icon .b-share-icon_liveinternet:before { content: '\e803'; } /* '' */
+.yandex-share-icon .b-share-icon_lj:before { content: '\e804'; } /* '' */
+.yandex-share-icon .b-share-icon_moikrug:before { content: '\e805'; } /* '' */
+.yandex-share-icon .b-share-icon_friendfeed:before { content: '\e801'; } /* '' */
+.yandex-share-icon .b-share-icon_odnoklassniki:before { content: '\e807'; } /* '' */
+.yandex-share-icon .b-share-icon_pinterest:before { content: '\e808'; } /* '' */
+.yandex-share-icon .b-share-icon_surfingbird:before { content: '\e809'; } /* '' */
+.yandex-share-icon .b-share-icon_twitter:before { content: '\e80a'; } /* '' */
+.yandex-share-icon .b-share-icon_vkontakte:before { content: '\e80b'; } /* '' */
+.yandex-share-icon .b-share-icon_moimir:before { content: '\e806'; } /* '' */
+
+.yandex-share-icon .b-share__handle { height: auto; }
+.yandex-share-icon .b-share-icon {
+    width: auto;
+    height: auto;
+    background: none;
+}

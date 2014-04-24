@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yandex-share замена иконок</title>
+    <link href='css/yandex-share.css' type='text/css' rel='stylesheet'>
+    <style>
+        /*Base for demo*/
+        .row {
+            width: 800px;
+            margin: 0 auto;
+            clear: both;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.625em;
+            line-height: 1.3;
+            font-weight: 300;
+        }
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.8em;
+            line-height: 1.3;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+        ul {
+            float: left;
+            display: block;
+            margin-top: 0;
+            margin-left: 60px;
+        }
+        smal {
+            display: block;
+            font-size: 0.8em;
+            text-align: right;
+        }
+        
+        /*Some magic*/
+        .yandex-share-icon .b-share__handle {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 0 !important;
+        }
+        .some-css1 .b-share-icon {
+            padding: 10px !important;
+            font-size: 1.6em;
+            color: #fff;
+            background: #000;
+            border-radius: 50%;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition:    all 0.5s ease;
+            -ms-transition:     all 0.5s ease;
+            -o-transition:      all 0.5s ease;
+            transition:         all 0.5s ease;
+        }
+        .some-css1 .b-share-icon:hover {
+            color: #f00;
+            background: rgba(0,0,0,0.2);
+        }
+        .yashare-auto-init {text-align: center;}
+        
+        /*Some magic again*/
+        .some-css2 .b-share-icon {
+            position: relative;
+            z-index: 1;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 10px !important;
+            text-align: center;
+            font-size: 1.8em;
+            color: #000;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(0,0,0,1);
+            overflow: hidden;
+            cursor: pointer;
+            -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            -moz-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+        }
+        .some-css2 .b-share-icon:hover {
+            background: rgba(0,0,0,1);
+            color: #fff;
+            box-shadow: 0 0 0 8px rgba(255,255,255,0.3);
+        }
+        .some-css2 .b-share-icon:hover:before {
+            -webkit-animation: toRightFromLeft 0.3s forwards;
+            -moz-animation: toRightFromLeft 0.3s forwards;
+            animation: toRightFromLeft 0.3s forwards;
+        }
+        @-webkit-keyframes toRightFromLeft {
+          49% {
+            -webkit-transform: translate(100%);
+          }
+          50% {
+            opacity: 0;
+            -webkit-transform: translate(-100%);
+          }
+          51% {
+            opacity: 1;
+          }
+        }
+        @-moz-keyframes toRightFromLeft {
+          49% {
+            -moz-transform: translate(100%);
+          }
+          50% {
+            opacity: 0;
+            -moz-transform: translate(-100%);
+          }
+          51% {
+            opacity: 1;
+          }
+        }
+        @keyframes toRightFromLeft {
+          49% {
+            transform: translate(100%);
+          }
+          50% {
+            opacity: 0;
+            transform: translate(-100%);
+          }
+          51% {
+            opacity: 1;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Yandex-share замена иконок</h1>
+    <div class="row">
+        <h2>Так выглядят стандартные <a href="http://api.yandex.ru/share/">«Поделиться» в соцсетях от Яндекса</a></h2>
+        <script type="text/javascript" src="//yandex.st/share/share.js"
+        charset="utf-8"></script>
+        <div class="yashare-auto-init" data-yashareL10n="ru"
+        data-yashareType="none" data-yashareQuickServices="yaru,liveinternet,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,pinterest,surfingbird" data-yashareImage="http://placehold.it/350x150"
+        ></div>
+
+    </div>
+    
+    <div class="row">
+        <h2>А так если c yandex-share.css* и добавить немного CSS по вкусу</h2>
+        <smal>* Спасибо создателям <a href="http://fontello.com/">Fontello</a></smal>
+        <script type="text/javascript" src="//yandex.st/share/share.js"
+        charset="utf-8"></script>
+        <div class="yashare-auto-init yandex-share-icon some-css1" data-yashareL10n="ru"
+        data-yashareType="none" data-yashareQuickServices="yaru,liveinternet,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,pinterest,surfingbird" data-yashareImage="http://placehold.it/350x150"
+        ></div>
+    </div>
+    
+    <div class="row">
+        <h2>Или другого CSS</h2>
+        <script type="text/javascript" src="//yandex.st/share/share.js"
+        charset="utf-8"></script>
+        <div class="yashare-auto-init yandex-share-icon some-css2" data-yashareL10n="ru"
+        data-yashareType="none" data-yashareQuickServices="yaru,liveinternet,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,pinterest,surfingbird" data-yashareImage="http://placehold.it/350x150"
+        ></div>
+    </div>
+    
+    <div class="row">
+        <p>В последнее в проэктах ориентированных на Россию приходится заменять стандартные иконки на кнопках поделится от Яндекс. Решил для себя сделать такую заготовку.</p>
+        <p>пока доступны: </p>
+        <ul>
+            <li>yaru - Я.Ру;</li>            
+            <li>facebook - facebook;</li>
+            <li>friendfeed - FriendFeed;</li>
+            <li>gplus - Google+;</li>
+            <li>liveinternet - LiveInternet;</li>
+            <li>lj - Живой Журнал;</li>
+            <li>moikrug - Мой Круг;</li>
+        </ul>
+        <ul>
+            <li>moimir - Мой Мир;</li>
+            <li>odnoklassniki - Одноклассники.ru;</li>
+            <li>pinterest - Pinterest;</li>
+            <li>surfingbird - Surfingbird;</li>
+            <li>twitter - Twitter;</li>
+            <li>vkontakte - ВКонтакте;</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
