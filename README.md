@@ -1,7 +1,7 @@
 yandex-share-change-icon
 ========================
 
-Замена стандартных иконок [Yandex-share](http://api.yandex.ru/share/)на иконочный шрифт
+Замена стандартных иконок [Yandex-share](http://api.yandex.ru/share/) на иконочный шрифт
 
 Для этого требуется в ваш проэкт добавить папку со шрифтами **font** и файл **yandex-share.css**.
 
